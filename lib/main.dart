@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
 }
 
 void getUsers() async {
-  final response = await http.get(Uri.parse('http://10.30.0.76:8000/account/api/users/'));
+  final response = await http.get(Uri.parse('http://192.168.8.179:8000/account/api/users/'));
 
   if (response.statusCode == 200) {
     List<dynamic> users = json.decode(response.body);

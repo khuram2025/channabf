@@ -6,7 +6,7 @@ Future<void> signup(String phoneNumber, String email, String password) async {
   String csrfToken = await getCsrfToken();
 
   final response = await http.post(
-    Uri.parse('http://10.30.0.76:8000/account/api/signup/'),
+    Uri.parse('http://192.168.8.179:8000/account/api/signup/'),
     headers: {
       'Content-Type': 'application/json',
       'X-CSRFToken': csrfToken,
